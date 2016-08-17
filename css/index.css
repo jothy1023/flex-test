@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer,
+.header {
+  width: 100%;
+  font-family: cursive;
+  color: #fff;
+  text-align: center;
+  background-color: #eee;
+}
+.content {
+  width: 100%;
+  background-color: #fff;
+}
+/*navigation begin*/
+.nav {
+  display: -webkit-flex;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #99cfc2;
+}
+.nav li {
+  flex: 1;
+  padding: 0 5px;
+  color: #555;
+  border-left: 1px dotted #555;
+}
+.nav li:first-child {
+  border: none;
+}
+/* list begin*/
+.list {
+  overflow: hidden;
+}
+.list li {
+  display: -webkit-flex;
+  width: 100%;
+  border: 1px solid #999;
+  padding: 5px;
+}
+.list img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.desc {
+  display: inline-block;
+  float: left;
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+/*unsure begin*/
+/*method one*/
+.unsure {
+  background-color: #99cfc2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-size: 10px;
+  padding: 10px;
+  box-shadow: 0 0 3em gold;
+}
+/*method two*/
+/*.content {
+   justify-content: center;
+   align-items: center;
+   display: -webkit-flex;
+}*/
+/*flex test begin*/
+.flex-tests p {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.flex-tests p::before {
+  content: "- ";
+}
+/* 父容器属性 */
+/* flex 只兼容 Android4.4+ & ios，旧版本要使用 flex-box*/
+.flex-tests > div {
+  display: -webkit-flex;
+  /*old: display: -webkit-flex-box;*/
+  border: 1px solid #000;
+  margin: 5px 0;
+  font-size: 14px;
+  /*default >> 6 props*/
+  /*
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    flex-flow: row no-wrap;
+    //主轴上的对齐方式，可取值 flex-start | flex-end | center | space-between | space-around
+    justify-content: flex-start;
+    // old: box-pack: flex-start;
+    //交叉轴上对齐方式，可取值 flex-start | flex-end | center | baseline | stretch
+    align-items: flex-start;
+    // old: box-align: flex-start;
+    // 以上两者的简写
+    align-content: flex-start flex-start;
+    */
+}
+.flex-tests .flex-test2 {
+  flex-direction: row-reverse;
+}
+.flex-tests .flex-test3 {
+  height: 60px;
+  flex-direction: column;
+}
+.flex-tests .flex-test4 {
+  justify-content: center;
+}
+.flex-tests .flex-test5 {
+  justify-content: space-between;
+}
+.flex-tests .flex-test6 {
+  justify-content: space-around;
+}
+.flex-tests .flex-test7 {
+  align-items: baseline;
+}
+.flex-tests .flex-test8 {
+  flex-direction: column;
+}
+/* 子项目属性 */
+.flex1 {
+  flex: 1;
+  background-color: #dda377;
+  /*default >> 6 props*/
+  /*
+  // 放大比例
+  flex-grow: 0;
+  // 缩小比例
+  flex-shrink: 0;
+  // 分配多余空间前，项目占据的主轴空间
+  flex-basis: auto;
+  // 以上三个的简写
+  flex: 0 0 auto;
+  // old: flex-box: 0 0 auto;
+  // 排序
+  order: 0;
+  // 在主轴/交叉轴上的对齐方式，哪个轴由父容器决定
+  align-self: auto;
+  */
+}
+.flex2 {
+  flex: 2;
+  background-color: #86e8ff;
+}
+.flex3 {
+  flex: 3;
+  background-color: #80d640;
+}
+.flex1-1 {
+  width: 100px;
+  background-color: #dda377;
+}
+.flex1-2 {
+  width: 100px;
+  background-color: #86e8ff;
+}
+.flex1-3 {
+  width: 100px;
+  background-color: #80d640;
+}
+.order1 {
+  order: 1;
+  background-color: #dda377;
+  align-self: flex-start;
+}
+.order2 {
+  order: 2;
+  background-color: #86e8ff;
+  align-self: center;
+}
+.order3 {
+  order: 3;
+  background-color: #80d640;
+  align-self: flex-end;
+}
+.order4 {
+  order: 4;
+  background-color: #dda377;
+  align-self: auto;
+}
+.order5 {
+  order: 5;
+  background-color: #86e8ff;
+  align-self: baseline;
+}
+.order6 {
+  order: 6;
+  background-color: #80d640;
+  align-self: stretch;
+}
+.fs10 {
+  font-size: 10px;
+}
+.fs15 {
+  font-size: 15px;
+}
+.fs20 {
+  font-size: 20px;
+}

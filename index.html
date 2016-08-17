@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li>你好</li>
+            <li>我是</li>
+            <li>四月</li>
+        </ul>
+    </div>
+    <div class="content">
+        <ul class="list">
+            <li><img src="img/1.jpg" alt=""><span class="desc">这是介绍么么哒～！这是介绍么么哒～！这是介绍么么哒～！</span></li>
+            <li><img src="img/1.jpg" alt=""><span class="desc">这是介绍么么哒～！这是介绍么么哒～！这是介绍么么哒～！</span></li>
+            <li><img src="img/1.jpg" alt=""><span class="desc">这是介绍么么哒～！这是介绍么么哒～！这是介绍么么哒～！</span></li>
+            <li><img src="img/1.jpg" alt=""><span class="desc">这是介绍么么哒～！这是介绍么么哒～！这是介绍么么哒～！</span></li>
+        </ul>
+        <!-- 不定宽高的水平垂直居中 -->
+        <div class="unsure">
+            <p>不定宽高的水平垂直居中</p>
+            <p>position: absolute;</p>
+            <p>top: 50%;</p>
+            <p>left: 50%;</p>
+            <p>transform:translate(-50%,-50%);</p>
+            <p>或者为父容器加上 flex 属性</p>
+            <p>display: -webkit-flex; </p>
+            <p>justify-content: center;</p>
+            <p>align-items: center; </p>
+        </div>
+        <div class="flex-tests">
+            <p>子项目 flex 分别取值123 ↓↓</p>
+            <div class="flex-test1">
+                <div class="flex1">flex: 1;</div>
+                <div class="flex2">flex: 2;</div>
+                <div class="flex3">flex: 3;</div>
+            </div>
+            <p>flex-direction: row-reverse;↓↓</p>
+            <div class="flex-test2">
+                <div class="flex1">flex: 1;</div>
+                <div class="flex2">flex: 2;</div>
+                <div class="flex3">flex: 3;</div>
+            </div>
+            <p>flex-direction: column;↓↓</p>
+            <div class="flex-test3">
+                <div class="flex1">flex: 1;</div>
+                <div class="flex2">flex: 2;</div>
+                <div class="flex3">flex: 3;</div>
+            </div>
+            <p>justify-content: center; 主轴上 居中对齐 ↓↓</p>
+            <div class="flex-test4">
+                <div class="flex1-1">width: 100px;</div>
+                <div class="flex1-2">width: 100px;</div>
+                <div class="flex1-3">width: 100px;</div>
+            </div>
+            <p>justify-content: space-between; 两边边界对齐 ↓↓</p>
+            <div class="flex-test5">
+                <div class="flex1-1">width: 100px;</div>
+                <div class="flex1-2">width: 100px;</div>
+                <div class="flex1-3">width: 100px;</div>
+            </div>
+            <p>justify-content: space-around; 左右留白相等 ↓↓</p>
+            <div class="flex-test6">
+                <div class="flex1-1">width: 100px;</div>
+                <div class="flex1-2">width: 100px;</div>
+                <div class="flex1-3">width: 100px;</div>
+            </div>
+            <p>align-items: baseline;
+                <br> 交叉轴上 基线对齐 基于字体
+                <br>可以看到字体第一行在同一基线上 ↓↓</p>
+            <div class="flex-test7">
+                <div class="flex1-1 fs10"><a href="">font-size: 10px;</a></div>
+                <div class="flex1-2 fs15"><a href="">font-size: 15px;</a></div>
+                <div class="flex1-3 fs20"><a href="">font-size: 20px;</a></div>
+            </div>
+            <p>子项目 order 取值 132456 flex-direction: column;
+                <br>1 align-self: flex-start;
+                <br>2 align-self: center;
+                <br>3 align-self: flex-end;
+                <br>4 align-self: auto;
+                <br>5 align-self: baseline;
+                <br>6 align-self: stretch;
+                <br>4与6效果一致，都是延伸铺满，优先级低于 width ↓↓
+            </p>
+            <div class="flex-test8">
+                <div class="order1">order: 1;
+                    <br>flex-start</div>
+                <div class="order3">order: 3;
+                    <br>flex-end</div>
+                <div class="order2">order: 2;
+                    <br>center</div>
+                <div class="order4">order: 4;
+                    <br>auto</div>
+                <div class="order5">order: 5;
+                    <br>baseline</div>
+                <div class="order6">order: 6;
+                    <br>stretch</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>
